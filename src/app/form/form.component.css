@@ -1,0 +1,93 @@
+*{
+    background-image: url('/assets/img/fm.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat, repeat;
+    color: white;
+    background-repeat: no-repeat;
+    background-origin: content-box, padding-box;
+}
+.myCont{
+   font-size: larger;
+}
+form{
+   height: 100%;
+    text-align: center;
+    width: 100%;
+}
+label{
+    margin: 2%;
+   text-align: right;
+    font-size: 30px;
+    
+}
+input[type="text"]{
+    font-size: larger;
+    margin-bottom: 22px;
+    border: 4px solid rgb(12, 8, 8);
+    width: 30%;
+    height: 40px;
+    
+}
+
+input[type="email"]{
+    margin-bottom: 22px;
+    border: 4px solid rgb(12, 8, 8);
+
+    width: 30%;
+    height: 40px;
+}
+input[type="date"]{
+    margin-bottom: 22px;
+   
+    border: 4px solid rgb(12, 8, 8);
+    width: 30%;
+    height: 40px;
+}
+input[type="submit"]{
+    margin: 22px;
+    font-size: larger;
+    width: 220px;height: 42px;
+    background-color: blue;
+    color:white ;
+    border-radius: 22px;
+}
+.custom-radio input[type="radio"] {
+    display: none;
+  }
+  
+  /* Create the custom radio button */
+.custom-radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+  .custom-radio-button {
+   margin-left: 45%;
+    width: 20px; /* Set the desired size */
+    height: 20px; /* Set the desired size */
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .custom-radio-button::after {
+    content: '';
+    width: 12px; /* Size of the inner circle */
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  /* Show the inner circle when the radio button is checked */
+  .custom-radio input[type="radio"]:checked + .custom-radio-button::after {
+    opacity: 1;
+  }
